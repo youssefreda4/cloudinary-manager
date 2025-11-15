@@ -1,0 +1,50 @@
+{
+    "name": "youssef/cloudinary-manager",
+    "description": "Professional Laravel Cloudinary integration package",
+    "type": "library",
+    "keywords": [
+        "laravel",
+        "cloudinary",
+        "image-upload",
+        "video-upload"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Youssef Reda",
+            "email": "your.email@example.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^10.0|^11.0",
+        "cloudinary-labs/cloudinary-laravel": "^2.3",
+        "cloudinary/cloudinary_php": "^2"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0|^9.0",
+        "phpunit/phpunit": "^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Youssef\\CloudinaryManager\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Youssef\\CloudinaryManager\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Youssef\\CloudinaryManager\\CloudinaryServiceProvider"
+            ],
+            "aliases": {
+                "Cloudinary": "Youssef\\CloudinaryManager\\Facades\\Cloudinary"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
