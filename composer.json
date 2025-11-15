@@ -27,21 +27,21 @@
     },
     "autoload": {
         "psr-4": {
-            "Youssef\\CloudinaryManager\\": "src/"
+            "CloudinaryManager\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Youssef\\CloudinaryManager\\Tests\\": "tests/"
+            "CloudinaryManager\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Youssef\\CloudinaryManager\\CloudinaryServiceProvider"
+                "CloudinaryManager\\CloudinaryServiceProvider"
             ],
             "aliases": {
-                "Cloudinary": "Youssef\\CloudinaryManager\\Facades\\Cloudinary"
+                "Cloudinary": "CloudinaryManager\\Facades\\Cloudinary"
             }
         }
     },
