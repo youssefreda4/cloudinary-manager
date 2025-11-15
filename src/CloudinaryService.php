@@ -79,7 +79,7 @@ class CloudinaryService
                 $uploadOptions
             );
 
-            return UploadResult::fromArray($result);
+            return UploadResult::fromArray((array) $result);
         } catch (\Exception $e) {
             throw new CloudinaryException(
                 "Failed to upload {$resourceType}: " . $e->getMessage(),
@@ -124,7 +124,7 @@ class CloudinaryService
                 'resource_type' => $resourceType,
             ]);
 
-            return $result;
+            return (array) $result;
         } catch (\Exception $e) {
             throw new CloudinaryException(
                 "Failed to delete by prefix: " . $e->getMessage(),
@@ -137,7 +137,7 @@ class CloudinaryService
     public function getResourceInfo(string $publicId, string $resourceType = 'image'): array
     {
         try {
-            return $this->adminApi->asset($publicId, [
+            return (array) $this->adminApi->asset($publicId, [
                 'resource_type' => $resourceType,
             ]);
         } catch (\Exception $e) {
