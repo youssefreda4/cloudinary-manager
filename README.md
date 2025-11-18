@@ -15,6 +15,8 @@ composer require youssefreda4/cloudinary-manager:v1.0.0
             "url": "https://github.com/youssefreda4/cloudinary-manager.git"
         }
     ],
+```
+
 ## Configuration
 
 Publish the configuration file:
