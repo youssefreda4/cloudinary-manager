@@ -69,11 +69,6 @@ The package automatically registers these routes:
 - `DELETE /api/cloudinary/delete/video`
 - `GET /api/cloudinary/resource/info`
 
-## Testing
-```bash
-composer test
-```
-
 ## License
 
 MIT
