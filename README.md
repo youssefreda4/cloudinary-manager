@@ -4,17 +4,7 @@ A professional Laravel package for managing media uploads with Cloudinary.
 
 ## Installation
 ```bash
-composer require youssefreda4/cloudinary-manager:v1.0.0
-```
-
-## composer.json
-```bash
-"repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/youssefreda4/cloudinary-manager.git"
-        }
-    ],
+composer require youssefreda4/cloudinary-manager
 ```
 
 ## Configuration
