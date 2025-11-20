@@ -30,11 +30,6 @@
             "CloudinaryManager\\": "src/"
         }
     },
-    "autoload-dev": {
-        "psr-4": {
-            "CloudinaryManager\\Tests\\": "tests/"
-        }
-    },
     "extra": {
         "laravel": {
             "providers": [
